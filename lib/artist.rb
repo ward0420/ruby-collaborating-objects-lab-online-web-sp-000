@@ -36,7 +36,7 @@ attr_accessor :name, :songs
     end
   end
   
-  def pint_songs
+  def print_songs
     
   end
   
