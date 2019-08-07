@@ -8,7 +8,7 @@ class MP3Importer
     @size = size
   end
   
-  def files(size)
+  def files
     
   end
 end
