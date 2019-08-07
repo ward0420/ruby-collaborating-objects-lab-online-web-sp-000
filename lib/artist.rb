@@ -28,7 +28,7 @@ attr_accessor :name, :songs
   def self.find_or_create_by_name(name)
     if 
       self.find(name)
-      self(find)name
+      self.find(name)
     else
       artist = Artist.new(name)
       @@all << artist
