@@ -21,7 +21,7 @@ attr_accessor :name, :songs
     @@all
   end
   
-  def find_or_create_by_name(name)
+  def find_or_create_by_name
     
   end
   
