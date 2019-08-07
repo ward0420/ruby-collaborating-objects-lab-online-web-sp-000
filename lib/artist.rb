@@ -21,10 +21,19 @@ attr_accessor :name, :songs
     @@all
   end
   
-  def self.find_or_create_by_name(name)
+  def self.find(name)
     self.all.select {|artist| artist.name == name}
-    artist
-    
+  end
+  
+  def self.find_or_create_by_name(name)
+    if 
+      self.find(name)
+      self(find)name
+    else
+      artist = Artist.new(name)
+      @@all << artist
+      artist
+    end
   end
   
   
